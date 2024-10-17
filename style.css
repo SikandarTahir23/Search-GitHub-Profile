@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.github-logo {
+    width: 4rem; /* Adjust size as needed */
+}
+
+.header h1 {
+    font-size: 3rem; /* Increased font size */
+    color: #6a0dad; /* Change color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    max-width: 60rem;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(28, 117, 142, 0.1);
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.search input {
+    padding: 0.8rem 1rem; /* Increased padding */
+    width: 100%;
+    border: none;
+    border-radius: 25px 0 0 25px; /* Rounded left corners */
+    font-size: 1.4rem; /* Slightly larger font size */
+    transition: box-shadow 0.3s;
+    background-color: rgb(249, 249, 249);
+}
+
+.search input:focus-visible {
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 1, 55, 0.5);
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #6a0dad, #9b59b6); /* Gradient background */
+    color: rgb(255, 254, 254);
+    padding: 0.8rem 1.5rem; /* Increased padding */
+    border: none;
+    border-radius: 0 25px 25px 0; /* Rounded right corners */
+    font-size: 1.4rem; /* Match input font size */
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s; /* Smooth transitions */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.primary-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background: rgba(55, 1, 55, 0.8); /* Darker hover state */
+}
+
+.primary-btn:active {
+    background: rgba(231, 59, 231, 0.8);
+}
+
+/* For Card */
+
+#profileContainer {
+    width: 100%;
+}
+
+.profile-box {
+    margin: auto;
+    padding: 4rem 2rem;
+    width: 90%;
+    max-width: 78rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in;
+}
+
+.profile-box:hover {
+    transform: rotate(-2deg) scale(1.01);
+    transition: 0.5s ease-in;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section button {
+    align-self: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left h1 {
+    font-size: 1.6rem;
+}
+
+.avatar {
+    height: 10rem;
+    width: 10rem;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about {
+    margin: 2rem;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
